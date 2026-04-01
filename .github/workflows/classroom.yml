@@ -18,8 +18,7 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: Q1
-        setup-command: python -m pip install --upgrade pip pip install numpy scikit-learn
-          pytest
+        setup-command: python -m pip install numpy scikit-learn pytest
         command: pytest test_AIstats_lab.py::test_naive_bayes_mle_spam -q
         timeout: 10
         max-score: 5
@@ -28,8 +27,7 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: Q2
-        setup-command: python -m pip install --upgrade pip pip install numpy scikit-learn
-          pytest
+        setup-command: python -m pip install numpy scikit-learn pytest
         command: pytest test_AIstats_lab.py::test_knn_iris -q
         timeout: 10
         max-score: 5
